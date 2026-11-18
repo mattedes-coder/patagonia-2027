@@ -1,4 +1,4 @@
-const CACHE = "patagonia-20261118100340";
+const CACHE = "patagonia-20261118100947";
 const CORE = ["./", "index.html", "manifest.webmanifest", "apple-touch-icon.png", "icon-192.png", "icon-512.png"];
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE)).then(() => self.skipWaiting()));
